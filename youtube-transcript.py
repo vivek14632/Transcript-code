@@ -14,8 +14,6 @@ for url in urls:
 		url1[1]=url1[1].split('\n')
 	
 		out=open(url1[1][0],"wb")
-		'''driver = webdriver.Firefox()'''
-		'''driver = webdriver.PhantomJS()'''
 		driver.get(url)
 		k=driver.find_element_by_xpath("//*[@id='action-panel-overflow-button']")
 		k.send_keys('\n')
